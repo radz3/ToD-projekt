@@ -22,7 +22,7 @@
 --- 02 COLORS
 
     - Primary: #090757
-    - Tints: #222068 #3a3979
+    - Tints: #222068 #3a3979 #8483ab
     - Shades: #050434
     - Accents: #00e4ff #007280
     - Greys: #feffcd
@@ -62,7 +62,7 @@ body {
 
 .heading-primary {
   color: #f8f7c9;
-  font-size: 7.4rem;
+  font-size: 6.2rem;
   font-weight: 700;
   letter-spacing: 3px;
   margin-bottom: 4.8rem;
@@ -72,29 +72,27 @@ body {
   color: #090757;
   text-transform: uppercase;
   text-align: center;
-  font-size: 3.6rem;
-  font-weight: 600;
+  font-size: 3rem;
+  font-weight: 400;
   margin-bottom: 1.6rem;
 }
 
-.section-disc {
-  color: #3a3979;
-  font-size: 1.8rem;
-  font-weight: 400;
-  letter-spacing: 1px;
-  margin-bottom: 3.2rem;
-  text-align: center;
-  margin-bottom: 6.4rem;
-}
-
 .col-header {
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 500;
   margin-bottom: 3.2rem;
 }
 
+.margin-bottom-hg {
+  margin-bottom: 9.6rem;
+}
+
 .margin-bottom-md {
   margin-bottom: 6.4rem;
+}
+
+.margin-bottom-sm {
+  margin-bottom: 3.2rem;
 }
 
 /* HEADER */
@@ -123,7 +121,7 @@ body {
 .main-nav-link:link,
 .main-nav-link:visited {
   display: inline-block;
-  font-size: 2.4rem;
+  font-size: 2rem;
   font-weight: 500;
   text-decoration: none;
   color: #f8f7c9;
@@ -163,7 +161,7 @@ body {
 
 .hero-disc {
   color: #f8f7c9;
-  font-size: 3rem;
+  font-size: 2.4rem;
   font-weight: 200;
   letter-spacing: 1px;
   margin-bottom: 3.2rem;
@@ -208,7 +206,7 @@ body {
   padding-bottom: 56.25%;
   padding-top: 25px;
   height: 0;
-  border-radius: 10px;
+  border-radius: 3px;
   overflow: hidden;
 }
 
@@ -246,14 +244,14 @@ body {
 
 .schedule-days {
   color: #007280;
-  font-size: 2.4rem;
+  font-size: 2rem;
   font-weight: 500;
   padding-top: 3.2rem;
   padding-bottom: 1.6rem;
 }
 
 .schedule-hours {
-  font-size: 4.4rem;
+  font-size: 3.6rem;
   padding: 0 3.2rem 4.8rem 3.2rem;
 }
 
@@ -264,12 +262,12 @@ body {
 }
 
 .schedule-content {
-  font-size: 2.4rem;
+  font-size: 2rem;
   padding: 0 3.2rem 3.2rem 3.2rem;
 }
 
 .schedule-disclaimer {
-  color: #3a3979;
+  color: #8483ab;
   font-size: 1.6rem;
   font-weight: 400;
   letter-spacing: 1px;
@@ -283,41 +281,6 @@ body {
   padding: 0rem 9.6rem 9.6rem 9.6rem;
 }
 
-.twitch-live {
-  display: grid;
-  grid-template-columns: 1.5fr 3fr;
-  align-items: center;
-}
-
-.live-disc {
-  color: #3a3979;
-  font-size: 3rem;
-  font-weight: 400;
-  letter-spacing: 1px;
-  margin-bottom: 3.2rem;
-  line-height: 1.5;
-}
-
-.cta-btn,
-.cta-btn:link,
-.cta-btn:visited {
-  display: inline-block;
-  text-decoration: none;
-  color: #fff;
-  background-color: #090757;
-  border-radius: 50px;
-  padding: 1.6rem 3.2rem;
-  font-size: 1.8rem;
-  font-weight: 600;
-  transition: all 0.3s;
-}
-
-.cta-btn:active,
-.cta-btn:hover {
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-  background-color: #222068;
-}
-
 .live-video {
   text-align: center;
   position: relative;
@@ -329,7 +292,7 @@ body {
   padding-top: 25px;
   height: 0;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
+  border-radius: 3px;
   overflow: hidden;
 }
 
@@ -363,7 +326,7 @@ body {
   padding-top: 25px;
   height: 0;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
+  border-radius: 3px;
   overflow: hidden;
 }
 
@@ -416,13 +379,13 @@ body {
 }
 
 .address {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   margin-bottom: 2.4rem;
 }
 
 .footer-link {
   text-decoration: none;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   line-height: 1.5;
 }
 
