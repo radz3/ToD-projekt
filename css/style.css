@@ -106,6 +106,7 @@ body {
 .main-nav {
   max-width: 130rem;
   margin: 0 auto;
+  padding: 0 3.6rem;
 }
 
 .logo {
@@ -222,7 +223,7 @@ body {
 /* SCHEDULE */
 
 .section-schedule {
-  padding: 9.6rem 9.6rem;
+  padding: 9.6rem 3.6rem;
 }
 
 .schedule {
@@ -253,12 +254,12 @@ body {
   padding-bottom: 1.6rem;
 }
 
-.days-friday {
+/* .days-friday {
   position: relative;
   overflow: hidden;
-}
+} */
 
-.schedule-friday::after {
+/* .schedule-friday::after {
   content: "free game";
   position: absolute;
   top: 7%;
@@ -269,7 +270,7 @@ body {
   background-color: rgb(0, 212, 113);
   padding: 0.5rem 6rem;
   transform: rotate(45deg);
-}
+} */
 
 .schedule-hours {
   font-size: 3rem;
@@ -293,6 +294,7 @@ body {
   font-weight: 400;
   letter-spacing: 1px;
   margin-bottom: 3.2rem;
+  max-width: 130rem;
   text-align: center;
 }
 
