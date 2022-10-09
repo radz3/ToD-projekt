@@ -6,11 +6,75 @@
   }
 }
 
-/* BELOW 1328px (smaller monitor) */
+/* BELOW 1328px */
 
 @media (max-width: 83em) {
   .schedule-icon {
     width: 5.4rem;
     height: 5.4rem;
   }
+
+  .schedule-content {
+    padding: 0 2.4rem 3.2rem 2.4rem;
+  }
+
+  .schedule-hours {
+    padding: 0 2.4rem 4.8rem 2.4rem;
+  }
+
+  .schedule-friday::after {
+    right: -32%;
+  }
 }
+
+/* BELOW 1104px */
+
+@media (max-width: 69em) {
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .schedule {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .days {
+    width: 100%;
+  }
+
+  .days-friday {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .days-friday .schedule-icon {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .days-friday .schedule-days {
+    font-size: 3.6rem;
+  }
+
+  .days-friday .schedule-hours {
+    font-size: 4.4rem;
+  }
+
+  .days-friday .schedule-content {
+    font-size: 3.6rem;
+  }
+
+  .schedule-friday::after {
+    top: 6%;
+    right: -10%;
+  }
+}
+
+/* BELOW 912px */
+
+@media (max-width: 57em) {
+} ;
