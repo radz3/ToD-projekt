@@ -103,7 +103,6 @@
   }
 
   .gallery {
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
   }
@@ -168,5 +167,142 @@
   .footer-link,
   .copyright {
     font-size: 1rem;
+  }
+}
+
+/* BELOW 512px */
+
+@media (max-width: 32em) {
+  .main-nav-link:link,
+  .main-nav-link:visited,
+  .main-nav-link:hover,
+  .main-nav-link:active {
+    font-size: 1rem;
+    padding: 0.2rem 0.4rem;
+  }
+
+  .hero-btn {
+    gap: 2rem;
+  }
+
+  .btn:link,
+  .btn:visited,
+  .btn:active,
+  .btn:hover {
+    font-size: 1.2rem;
+    padding: 0.4rem 1.2rem;
+  }
+
+  .logo {
+    width: 5rem;
+  }
+
+  .heading-primary {
+    font-size: 2.4rem;
+  }
+
+  .heading-secondary {
+    font-size: 1.6rem;
+  }
+
+  .section-hero {
+    padding: 6.4rem 3.6rem;
+  }
+
+  .section-schedule {
+    padding: 6.4rem 3.6rem;
+  }
+
+  .section-live {
+    padding: 0rem 3.6rem 6.4rem 3.6rem;
+  }
+
+  .section-gallery {
+    padding: 0rem 3.6rem 6.4rem 3.6rem;
+  }
+
+  .section-footer {
+    padding: 6.4rem 3.6rem;
+  }
+
+  .margin-bottom-sm {
+    margin-bottom: 1.6rem;
+  }
+
+  .hero-disc {
+    font-size: 1.4rem;
+  }
+
+  .schedule {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 1.2rem;
+  }
+
+  .days-friday {
+    grid-column: 1;
+    grid-row: 1;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .days-friday .schedule-icon {
+    width: 7.4rem;
+    height: 7.4rem;
+  }
+
+  .days-friday .schedule-days {
+    font-size: 2.4rem;
+  }
+
+  .days-friday .schedule-hours {
+    font-size: 3rem;
+  }
+
+  .days-friday .schedule-content {
+    font-size: 2.4rem;
+  }
+
+  .schedule-friday::after {
+    top: 11%;
+    right: -16%;
+  }
+
+  .schedule-days {
+    font-size: 1.8rem;
+  }
+
+  .schedule-icon {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .schedule-content {
+    font-size: 1.8rem;
+  }
+
+  .schedule-hours {
+    font-size: 2.4rem;
+    padding: 0 1rem 3.2rem 1rem;
+  }
+
+  .schedule-disclaimer {
+    font-size: 1rem;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .logo-col {
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 3;
+    justify-content: center;
+    align-items: center;
   }
 }
