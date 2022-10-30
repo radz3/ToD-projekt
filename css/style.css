@@ -144,22 +144,28 @@ body {
   border-radius: 50px;
 }
 
-/* MOBLI NAV */
+.logo-mobile {
+  display: none;
+}
+
+/* MOBILE NAV */
 
 .btn-mobile-nav {
   border: none;
   background: none;
 
   display: none;
+
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  z-index: 2;
 }
+
 .icon-mobile-nav {
   width: 4.8rem;
   height: 4.8rem;
   color: #f8f7c9;
-
-  position: absolute;
-  top: 1%;
-  left: 90%;
 }
 
 .icon-mobile-nav[name="close-outline"] {
