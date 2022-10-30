@@ -4,6 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="The only Twitch Channel where you will believe that you are not bad in video games! Gaming, from the heart of Transylvania."
+    />
+
+    <link rel="icon" href="img/logo-tod64.png" />
+    <link rel="apple-touch-icon" href="img/apple-touch.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,7 +25,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/mediaquery.css" />
 
-    <title>ToD</title>
+    <title>TasteOfDiversity &mdash; ToD Gaming</title>
   </head>
   <body>
     <header class="header nav-open">
@@ -26,7 +34,15 @@
           <li><a class="main-nav-link" href="#">Schedule</a></li>
           <li><a class="main-nav-link" href="#">Live</a></li>
           <li>
-            <img class="logo" src="img/logo.png" alt="TasteOfDiversity Logo" />
+            <picture>
+              <source srcset="img/logo.webp" type="image/webp" />
+              <source srcset="img/logo-opt.png" type="image/webp" />
+              <img
+                class="logo"
+                src="img/logo-opt.png"
+                alt="TasteOfDiversity Logo"
+              />
+            </picture>
           </li>
           <li><a class="main-nav-link" href="#">Gallery</a></li>
           <li><a class="main-nav-link" href="#">Contacts</a></li>
@@ -322,7 +338,11 @@
         </div>
         <div class="logo-col">
           <a class="footer-logo" href="#">
-            <img class="logo-tod" alt="ToD-Logo" src="img/logo-tod.png" />
+            <picture>
+              <source srcset="img/logo-tod.webp" type="image/webp" />
+              <source srcset="img/logo-tod-opt.png" type="image/png" />
+              <img class="logo-tod" alt="ToD-Logo" src="img/logo-tod-opt.png" />
+            </picture>
           </a>
           <p class="copyright">
             Copyright &copy; <span class="year">2022</span> by <br />
