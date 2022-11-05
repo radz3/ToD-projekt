@@ -34,14 +34,21 @@
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
 
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+
     <title>TasteOfDiversity &mdash; ToD Gaming</title>
   </head>
   <body>
     <header class="header">
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li><a class="main-nav-link" href="#">Schedule</a></li>
-          <li><a class="main-nav-link" href="#">Live</a></li>
+          <li>
+            <a class="main-nav-link" href="#section-schedule">Schedule</a>
+          </li>
+          <li><a class="main-nav-link" href="#section-live">Live</a></li>
           <li>
             <picture>
               <source srcset="img/logo.webp" type="image/webp" />
@@ -53,8 +60,10 @@
               />
             </picture>
           </li>
-          <li><a class="main-nav-link" href="#">Gallery</a></li>
-          <li><a class="main-nav-link" href="#">Contacts</a></li>
+          <li><a class="main-nav-link" href="#section-gallery">Gallery</a></li>
+          <li>
+            <a class="main-nav-link" href="#section-contacts">Contacts</a>
+          </li>
         </ul>
       </nav>
       <picture>
@@ -81,8 +90,18 @@
             in video games! Gaming, from the heart of Transylvania.
           </p>
           <div class="hero-btn">
-            <a class="btn" href="#">Join us on Twitch</a>
-            <a class="btn" href="#">Video Gallery</a>
+            <a
+              class="btn"
+              target="_blank"
+              href="https://www.twitch.tv/tasteofdiversity"
+              >Join us on Twitch</a
+            >
+            <a
+              class="btn"
+              target="_blank"
+              href="https://www.youtube.com/channel/UCa0abWvEvidcfRWsquUIblA"
+              >Join us on YouTube</a
+            >
           </div>
         </div>
         <div class="hero-video">
@@ -100,7 +119,7 @@
       </div>
     </section>
 
-    <section class="section-schedule margin-bottom-sm">
+    <section class="section-schedule margin-bottom-sm" id="section-schedule">
       <h2 class="heading-secondary margin-bottom-sm">
         Live Streams five times a week
       </h2>
@@ -140,7 +159,7 @@
         Schedule change will be announced on our Social Media platforms
       </p>
     </section>
-    <section class="section-live margin-bottom-sm">
+    <section class="section-live margin-bottom-sm" id="section-live">
       <div class="twitch-live">
         <div>
           <h2 class="heading-secondary margin-bottom-sm">
@@ -160,7 +179,7 @@
         </div>
       </div>
     </section>
-    <section class="section-gallery margin-bottom-hg">
+    <section class="section-gallery margin-bottom-hg" id="section-gallery">
       <h2 class="heading-secondary margin-bottom-sm">
         Rewatch the live streams and check the compilations
       </h2>
@@ -311,28 +330,44 @@
         </div>
       </div>
     </section>
-    <footer class="section-footer">
+    <footer class="section-footer" id="section-contacts">
       <div class="footer">
         <div clas="sm-col">
           <p class="col-header">Social Media</p>
           <ul class="sm-list">
             <li>
-              <a class="sm-link" href="#">
+              <a
+                class="sm-link"
+                target="_blank"
+                href="https://www.twitch.tv/tasteofdiversity"
+              >
                 <ion-icon class="sm-icon" name="logo-twitch"></ion-icon>
               </a>
             </li>
             <li>
-              <a class="sm-link" href="#">
-                <ion-icon class="sm-icon" name="logo-youtube"></ion-icon>
+              <a
+                class="sm-link"
+                target="_blank"
+                href="https://twitter.com/tasteOdiversity"
+              >
+                <ion-icon class="sm-icon" name="logo-twitter"></ion-icon>
               </a>
             </li>
             <li>
-              <a class="sm-link" href="#">
+              <a
+                class="sm-link"
+                target="_blank"
+                href="https://www.instagram.com/tasteofdiversitygaming/?hl=en"
+              >
                 <ion-icon class="sm-icon" name="logo-instagram"></ion-icon>
               </a>
             </li>
             <li>
-              <a class="sm-link" href="#">
+              <a
+                class="sm-link"
+                target="_blank"
+                href="https://www.facebook.com/tasteofdiversitygaming"
+              >
                 <ion-icon class="sm-icon" name="logo-facebook"></ion-icon>
               </a>
             </li>
