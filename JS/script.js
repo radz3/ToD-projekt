@@ -20,14 +20,13 @@ const addScheduleHTML = function (day) {
     dayType = 'days days-friday schedule-friday';
   }
 
-  scheduleDays += `
-  <div class="${dayType}">
-  <p class="schedule-days">${day}</p>
-  <p class="schedule-hours">19:00-23:00</p>
-        <ion-icon class="schedule-icon" name="${iconName}">
-        </ion-icon>
-        <p class="schedule-content">${contentName}</p>
-      </div>`;
+  scheduleDays += `<div class="${dayType}">
+      <p class="schedule-days">${day}</p>
+      <p class="schedule-hours">19:00-23:00</p>
+      <ion-icon class="schedule-icon" name="${iconName}">
+      </ion-icon>
+      <p class="schedule-content">${contentName}</p>
+     </div>`;
 };
 
 weekdays.forEach(day => addScheduleHTML(day));
@@ -56,18 +55,17 @@ const gallery = document.querySelector('.gallery');
 let galleryVideo = '';
 
 const addVideoHTML = function (link) {
-  galleryVideo += ` <div class='gallery-video'>
-          <iframe
-            class='gallery-yt-video'
-            width='350'
-            height='197'
-            src=${link};
-            title='YouTube video player'
-            frameborder='0'
-            allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
-            allowfullscreen>
-          </iframe>
-        </div>`;
+  galleryVideo += `<div class='gallery-video'>
+      <iframe
+        class='gallery-yt-video'
+        width='350'
+        height='197'
+        src=${link};
+        title='YouTube video player'
+        frameborder='0'
+        allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen>
+      </iframe>
+     </div>`;
 };
 
 videoYoutube.forEach(element => addVideoHTML(element));
