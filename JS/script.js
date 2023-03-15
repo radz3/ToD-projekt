@@ -1,5 +1,39 @@
 'use strict';
 
+const weekdays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'];
+
+const schedule = document.querySelector('.schedule');
+
+let scheduleDays = '';
+
+const addScheduleHTML = function (day) {
+  let iconName = 'people-outline';
+  let contentName = 'Multiplayer with Friends';
+  let dayType = 'days';
+
+  if (day === 'Wednesday') {
+    iconName = 'person-outline';
+    contentName = 'Singleplayer';
+  } else if (day === 'Friday') {
+    iconName = 'cash-outline';
+    contentName = 'Free to Play Friday';
+    dayType = 'days days-friday schedule-friday';
+  }
+
+  scheduleDays += `
+  <div class="${dayType}">
+  <p class="schedule-days">${day}</p>
+  <p class="schedule-hours">19:00-23:00</p>
+        <ion-icon class="schedule-icon" name="${iconName}">
+        </ion-icon>
+        <p class="schedule-content">${contentName}</p>
+      </div>`;
+};
+
+weekdays.forEach(day => addScheduleHTML(day));
+
+schedule.innerHTML = scheduleDays;
+
 // YouTube gallery
 
 const videoYoutube = [
@@ -31,18 +65,14 @@ const addVideoHTML = function (link) {
             title='YouTube video player'
             frameborder='0'
             allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
-            allowfullscreen
-          ></iframe>
+            allowfullscreen>
+          </iframe>
         </div>`;
 };
 
-for (let i = 0; i < videoYoutube.length; i++) {
-  addVideoHTML(videoYoutube[i]);
-}
+videoYoutube.forEach(element => addVideoHTML(element));
 
 gallery.innerHTML = galleryVideo;
-
-console.log(gallery);
 
 // Mobile navigation
 
@@ -55,21 +85,30 @@ btnNavEl.addEventListener('click', function () {
 
 // Smooth scrolling
 
-const allLinks = document.querySelectorAll('a:link');
+const allLinks = document.querySelectorAll('.main-nav-link');
 
-allLinks.forEach(function (link) {
+// allLinks.forEach(function (link) {
+//   link.addEventListener('click', function (e) {
+//     e.preventDefault();
+//     const href = link.getAttribute('href');
+
+//     if (href === '#') window.scrollTo({ top: 0, behavior: 'smooth' });
+
+//     if ((href === '#') & href.startsWith('#')) {
+//       const sectionEl = document.querySelector(href);
+//       sectionEl.scrollIntoView({ behavior: 'smooth' });
+//     }
+
+//     if (link.classList.contains('main-nav-link'))
+//       headerEl.classList.toggle('nav-open');
+//   });
+// });
+
+allLinks.forEach(link => {
   link.addEventListener('click', function (e) {
     e.preventDefault();
     const href = link.getAttribute('href');
-
-    if (href === '#') window.scrollTo({ top: 0, behavior: 'smooth' });
-
-    if ((href === '#') & href.startsWith('#')) {
-      const sectionEl = document.querySelector(href);
-      sectionEl.scrollIntoView({ behavior: 'smooth' });
-    }
-
-    if (link.classList.contains('main-nav-link'))
-      headerEl.classList.toggle('nav-open');
+    const sectionEl = document.querySelector(href);
+    sectionEl.scrollIntoView({ behavior: 'smooth' });
   });
 });

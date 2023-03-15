@@ -1,14 +1,10 @@
-/* BELOW 1440px */
-
-@media (max-width: 90em) {
+@media (max-width: 1440px) {
   .schedule-hours {
     font-size: 2.4rem;
   }
 }
 
-/* BELOW 1328px */
-
-@media (max-width: 83em) {
+@media (max-width: 1328px) {
   .schedule-icon {
     width: 5.4rem;
     height: 5.4rem;
@@ -23,13 +19,11 @@
   }
 
   .schedule-friday::after {
-    right: -32%;
+    left: 25%;
   }
 }
 
-/* BELOW 1104px */
-
-@media (max-width: 69em) {
+@media (max-width: 1104px) {
   .hero {
     display: grid;
     grid-template-columns: 1fr;
@@ -69,14 +63,12 @@
   }
 
   .schedule-friday::after {
-    top: 6%;
-    right: -10%;
+    top: 2%;
+    left: 65%;
   }
 }
 
-/* BELOW 912px */
-
-@media (max-width: 57em) {
+@media (max-width: 914px) {
   .main-nav-link:link,
   .main-nav-link:visited,
   .main-nav-link:hover,
@@ -98,8 +90,8 @@
   }
 
   .schedule-friday::after {
-    top: 6%;
-    right: -15%;
+    top: 3%;
+    left: 58%;
   }
 
   .gallery {
@@ -108,9 +100,14 @@
   }
 }
 
-/* BELOW 688px */
+@media (max-width: 770px) {
+  .schedule-friday::after {
+    top: 3%;
+    left: 42%;
+  }
+}
 
-@media (max-width: 43em) {
+@media (max-width: 688px) {
   .logo {
     width: 8rem;
   }
@@ -135,8 +132,8 @@
   }
 
   .schedule-friday::after {
-    top: 6%;
-    right: -10%;
+    top: 2%;
+    left: 69%;
   }
 
   .schedule-disclaimer {
@@ -201,11 +198,11 @@
     transform: translateX(0%);
   }
 
-  .nav-open .icon-mobile-nav[name="close-outline"] {
+  .nav-open .icon-mobile-nav[name='close-outline'] {
     display: block;
   }
 
-  .nav-open .icon-mobile-nav[name="grid-outline"] {
+  .nav-open .icon-mobile-nav[name='grid-outline'] {
     display: none;
   }
 
@@ -221,9 +218,7 @@
   }
 }
 
-/* BELOW 512px */
-
-@media (max-width: 32em) {
+@media (max-width: 512px) {
   .hero-btn {
     gap: 2rem;
   }
@@ -303,8 +298,8 @@
   }
 
   .schedule-friday::after {
-    top: 11%;
-    right: -16%;
+    top: 3%;
+    left: 52%;
   }
 
   .schedule-days {

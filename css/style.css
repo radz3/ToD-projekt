@@ -55,7 +55,7 @@ html {
 }
 
 body {
-  font-family: "Kanit", sans-serif;
+  font-family: 'Kanit', sans-serif;
   line-height: 1;
   font-weight: 400;
   color: #333;
@@ -168,7 +168,7 @@ body {
   color: #f8f7c9;
 }
 
-.icon-mobile-nav[name="close-outline"] {
+.icon-mobile-nav[name='close-outline'] {
   display: none;
 }
 
@@ -176,7 +176,7 @@ body {
 
 .section-hero {
   background-image: linear-gradient(to bottom, #090757, #3a3979),
-    url(".../img/logo-tod.png");
+    url('.../img/logo-tod.png');
   background-size: cover;
 
   padding: 9.6rem 3.6rem;
@@ -232,7 +232,6 @@ body {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 
   position: relative;
-  /* 16:9 ratio eseten 56.25% */
   float: none;
   clear: both;
   width: 100%;
@@ -291,15 +290,15 @@ body {
 }
 
 .schedule-friday::after {
-  content: "free game";
+  content: 'free game';
   position: absolute;
-  top: 7%;
-  right: -28%;
+  top: 5%;
+  left: 35%;
   font-size: 1.6rem;
   font-weight: 600;
   color: #333;
   background-color: rgb(0, 212, 113);
-  padding: 0.5rem 6rem;
+  padding: 0.6rem 10rem;
   transform: rotate(45deg);
 }
 
@@ -338,7 +337,6 @@ body {
 .live-video {
   text-align: center;
   position: relative;
-  /* 16:9 ratio eseten 56.25% */
   float: none;
   clear: both;
   width: 100%;
@@ -372,7 +370,6 @@ body {
 
 .gallery-video {
   position: relative;
-  /* 16:9 ratio eseten 56.25% */
   float: none;
   clear: both;
   width: 100%;
